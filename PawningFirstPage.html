@@ -1,0 +1,136 @@
+<html>
+    <head> <title>Web Aplication </title>   </head>
+    <body>
+        <nav>
+			
+            <!-- a : is making reference for any web address 
+                   href    :: attribute is the link to reference with a web resource you need, # referance to the same page  	
+            -->
+            <a href="#"> Tranaction</a> |    
+            <a href="#"> Daily Repotrs</a> |   
+            <a href="#"> Monthly Reports</a> |   
+            <a href="#"> Day End</a> 
+        </nav>
+    <hr>
+    <p>If Your ship is synking suddenly, what will you do ?</p>
+    <table border="1">
+        <tr>
+            <th>
+                
+			<input type="radio" id="optMember" name="optMember" value="Member">
+			<label for="optMember">Member</label>
+			  
+			<input type="radio" id="optNonMember" name="optNonMember" value="NonMember">
+			<label for="optNonMember">NonMember</label>
+
+            <input type="radio" id="optStaff" name="optStaff" value="Staff">
+			<label for="optStaff">Staff</label>
+			<br>
+            </th>
+            
+        </tr>
+    </table>
+    <center>
+        <h2>Pawning Application</h2>
+        
+        <img src="image/pawning1.jpg" width="300" height="300 ">
+       
+    </center>
+
+    <FOrm method="post" autocomplete="off">
+
+        <fieldset>
+            <legend>First, tell us your initial data</legend>
+                <label >ID Card No :-</label>
+                <input type="text" id="id_No" name="id_No"> 
+                <br>
+                <br>
+                <label >Initial :- </label>
+                <input type="text" id="Initial" name="initial"  size="20">
+                <br><br>
+                <label >Initial Details :- </label>
+                <input type="text" id="Ini_details" name="ini_Details"  size="60">
+                <br><br>
+                <label >Last Name:- </label>
+                <input type="text" id="F_Name" name="F_Name"  size="60">
+                <br><br>
+                <label >Address:-- </label>
+                <input type="text" id="Add1" name="Add1" size="35"><br><br>
+                <input type="text" id="Add2" name="Add2" size="35"><br><br>
+                <input type="text" id="City" name="City" size="35"><br> <br>
+                <label >Telephone No:- </label>
+                <input type="text" id="Tel" name="Tel" size="12"><br><br>   
+
+                <input type="range" name="volume">
+                
+                <input type="submit" value="Click me" >    
+        </fieldset>
+
+    </FOrm>
+
+    <FOrm method="post" autocomplete="off">
+
+        <fieldset>
+            <legend>Other Details</legend>
+                <label >Select Gold Items :-</label>
+                <select name="Gold_Item" id="Gold_Item"> 
+                      <option value="Neck_less">Neck less</option>
+                      <option value="Earrings">Earrings</option>
+                      <option value="Bracelets">Bracelets</option>
+                      <option value="Bangle">Bangle</option>
+                      <option value="Ring">Ring</option>
+                      <option value="Tells">Tells</option>
+                      <option value="Pendent">Pendent</option>
+                      <option value="Chain">Chain</option>
+                </select>
+                <input type="button" value="Add Select Items">
+                <br>
+                <br>
+                <label >Articles Description  :- </label>
+                <input type="text" id="Pawn_Items" name="Pawn_Items"  size="60">
+                
+                <label > Interst Rate :- </label>
+                        <select name="int_rate" id="Int_Rate">
+                            <option value="15%">15.00</option> 
+                            <option value="18%">18.00</option>                              
+                        </select>
+                <label > Gold Content :- </label>
+                        <select name="Gold_Content" id="Gold_Content">
+                            <option value="16">16</option> 
+                            <option value="18">18</option>
+                            <option value="20">20</option> 
+                            <option value="22">22</option>
+                            <option value="20">24</option> 
+                        </select>
+
+                <br> 
+                <br>       
+                <label >Weight of Articles (gr.) :- </label>
+                <input type="number" id="W_Articl" name="W_Articl"  size="20">
+                <br>
+                <input type="number" required name="price" min="0" value="0" step="any">
+                <br>
+                <label >Weight of Gold (gr.) :- </label>
+                <input type="number" id="W_Gold" name="W_Gold"  size="20">
+                <br>
+                <Br>
+                <label >Assessed Value Rs. :- </label>
+                <input type="number" id="Assessed_Amt" name="Assessed_Amt"  size="20"> 
+                <br>       
+                 <br> 
+                 <label >Pawning Advance Rs. :- </label>
+                <input type="number" id="Advance_Amt" name="Advance_Amt"  size="20">
+                <br>  
+                <br>  
+                <input type="button" value="Process">
+                <input type="button" value="Save">     
+                <input type="submit" value="Check" >    
+        </fieldset>
+
+    </FOrm>
+
+   
+    
+        
+    </body>
+</html>
